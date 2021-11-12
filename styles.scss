@@ -1,0 +1,141 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+
+#listContainer
+{
+    height: 700px;;
+
+    #listPage
+    {
+        margin-left: auto;
+        margin-right: auto;
+        height: 95%;
+        width:85%;
+        background-color: white;
+        margin-top:5%;
+        border: 1px solid lightgray;
+
+        hr
+        {
+            border: 1px solid rgb(197, 197, 197);
+            width:95%;
+        }
+
+        #listTitle
+        {
+            text-align: left;
+            margin-top:5%;
+            margin-left: 5%;
+        }
+
+        form 
+        {
+            margin-left: 5%;
+            margin-top: 2.5%;
+            label
+            {
+                
+                font-size: 15px;
+            }
+
+            #task 
+            {
+                height: 30px;
+                width: 100%;
+                border:none;
+                outline: none;
+                font-size: 20px;
+            }
+
+            #submit-button
+            {
+                margin-top: 5%;
+                width:110px;
+                height: 35px;
+                font-size: 100%;
+                background-color: rgb(2, 172, 2);
+                border: none;
+                border-radius: 5px;
+            }
+
+            #submit-button:hover
+            {
+                background-color: rgb(163, 231, 163);
+            }
+    
+        }
+
+        #listDisplay
+        {
+            margin-top: 5%;
+            width: 100%;
+            height: 70%;
+            border-top: 1px solid lightgray;
+            overflow: hidden;
+
+            #list
+            {
+                margin-top:5%;
+                margin-left: auto;
+                margin-right: auto;
+                height: 80%;
+                width:75%;
+                border: 1px solid lightgray;
+                overflow: scroll;
+
+                .list-item
+                {
+                    white-space: nowrap;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 20px;
+                    height: 10%;
+                    margin-top:2.5%;
+                    padding-left: 5px;
+                    list-style-type: none;
+                    border-bottom: 1px solid rgb(230, 229, 229);
+
+
+                    .content
+                    {
+                        margin-right: 2.5%;
+                        flex:6;
+                        overflow: hidden;
+                    }
+                    .remove-content
+                    {
+                        flex:1;
+                        i
+                        {
+                            margin-left: 30%;
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+
+@media only screen and (min-width: 1000px)
+{
+    #listContainer
+    {
+        #listPage
+        {
+            #listDisplay
+            {
+                #list
+                {    
+                    margin-top:0;
+                    border-top: 0;
+                }
+            }
+        }
+       
+    }
+}

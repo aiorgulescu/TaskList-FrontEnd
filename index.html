@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TaskList</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://kit.fontawesome.com/4b11e08c8c.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <main id = "listContainer">
+            <div id = "listPage">
+                <h1 id = "listTitle">Task List</h1>
+                <form>
+                    <label for="task">New Task</label><br>
+                    <input type="text" id = "task" placeholder = "check" autocomplete="off">
+                    <hr>
+                    <input type="button" id = "submit-button" value = "Submit" >
+                </form>
+
+                <div id = "listDisplay">
+                    <ul id = "list">
+                    </ul>
+                </div>
+            </div>
+            
+        </main>
+
+        <script src = "app.js"></script>
+    </body>
+
+
+</html>

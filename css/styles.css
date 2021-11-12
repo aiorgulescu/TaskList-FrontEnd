@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#listContainer {
+  height: 700px;
+}
+
+#listContainer #listPage {
+  margin-left: auto;
+  margin-right: auto;
+  height: 95%;
+  width: 85%;
+  background-color: white;
+  margin-top: 5%;
+  border: 1px solid lightgray;
+}
+
+#listContainer #listPage hr {
+  border: 1px solid #c5c5c5;
+  width: 95%;
+}
+
+#listContainer #listPage #listTitle {
+  text-align: left;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+#listContainer #listPage form {
+  margin-left: 5%;
+  margin-top: 2.5%;
+}
+
+#listContainer #listPage form label {
+  font-size: 15px;
+}
+
+#listContainer #listPage form #task {
+  height: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+#listContainer #listPage form #submit-button {
+  margin-top: 5%;
+  width: 110px;
+  height: 35px;
+  font-size: 100%;
+  background-color: #02ac02;
+  border: none;
+  border-radius: 5px;
+}
+
+#listContainer #listPage form #submit-button:hover {
+  background-color: #a3e7a3;
+}
+
+#listContainer #listPage #listDisplay {
+  margin-top: 5%;
+  width: 100%;
+  height: 70%;
+  border-top: 1px solid lightgray;
+  overflow: hidden;
+}
+
+#listContainer #listPage #listDisplay #list {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80%;
+  width: 75%;
+  border: 1px solid lightgray;
+  overflow: scroll;
+}
+
+#listContainer #listPage #listDisplay #list .list-item {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  height: 10%;
+  margin-top: 2.5%;
+  padding-left: 5px;
+  list-style-type: none;
+  border-bottom: 1px solid #e6e5e5;
+}
+
+#listContainer #listPage #listDisplay #list .list-item .content {
+  margin-right: 2.5%;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  overflow: hidden;
+}
+
+#listContainer #listPage #listDisplay #list .list-item .remove-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#listContainer #listPage #listDisplay #list .list-item .remove-content i {
+  margin-left: 30%;
+}
+
+@media only screen and (min-width: 1000px) {
+  #listContainer #listPage #listDisplay #list {
+    margin-top: 0;
+    border-top: 0;
+  }
+}
