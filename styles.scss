@@ -84,7 +84,7 @@
                 height: 80%;
                 width:75%;
                 border: 1px solid lightgray;
-                overflow: scroll;
+                overflow-y: scroll;
 
                 .list-item
                 {
@@ -121,10 +121,11 @@
 }
 
 
-@media only screen and (min-width: 1000px)
+@media only screen and (min-width: 900px)
 {
     #listContainer
     {
+        height: 1000px;
         #listPage
         {
             #listDisplay
